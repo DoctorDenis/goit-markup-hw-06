@@ -954,14 +954,21 @@ ol {
   transform-origin: border, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: transparent;
+}
+
+.modal-terms-link {
+  text-decoration: underline;
+  color: var(--accent-color);
 }
 
 .modal-checkbox-icon {
-  fill: var(--white-color);
+  fill: currentColor;
 }
 
 #subscription-agreement:checked + .modal-subscription-checkbox {
   border: 2px solid var(--accent-color);
+  color: var(--white-color);
   background-color: var(--accent-color);
 }
 
